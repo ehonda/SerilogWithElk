@@ -33,7 +33,7 @@ services:
       - elastic
 
 volumes:
-  data:
+  serilog-with-elk-data:
     driver: local
 
 networks:
