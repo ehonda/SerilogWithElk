@@ -27,6 +27,7 @@ namespace SerilogWithElk
                     new ElasticsearchSinkOptions(new Uri("http://localhost:9200"))
                     {
                         AutoRegisterTemplate = true,
+                        AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv7,
                         BufferBaseFilename = ".logs/elasticbuffer",
                         IndexFormat = "serilog-elk-{0:yyyy.MM.dd}"
                     })
